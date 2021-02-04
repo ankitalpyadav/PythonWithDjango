@@ -12,4 +12,6 @@ Follow the Sequence given in sequence.txt to run project.
 
 Screenshots:-
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](index.png?raw=true "index page")
+![Alt text](register.png?raw=true "register page")
+![Alt text](login.png?raw=true "login page")
