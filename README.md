@@ -9,3 +9,7 @@ Pre-Requsites
 3) DB Browser SQLite
 
 Follow the Sequence given in sequence.txt to run project.
+
+Screenshots:-
+
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
