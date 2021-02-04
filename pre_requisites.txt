@@ -1,0 +1,7 @@
+Python - https://www.python.org/downloads/
+
+Visual Studio Code - https://code.visualstudio.com/
+
+To view sqlite db - https://sqlitebrowser.org/
+
+To access code - https://snipper.io/

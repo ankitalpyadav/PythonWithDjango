@@ -1,0 +1,57 @@
+>> pip install virtualenv     # install virtualenv
+
+>> python -m venv proenv    # to create virtualenv
+
+>> proenv\scripts\activate.bat      # to run venv
+
+>> pip install Django   # install Django
+
+>> django-admin startproject myproject
+
+>> cd myproject
+
+>> python manage.py runserver
+
+>> ctrl+c   # to stop the server
+
+>> python manage.py startapp myapp
+
+# add 'myapp' in setting
+
+# add template directory - import os
+'DIRS': [os.path.join(BASE_DIR,'templates')],
+
+# copy urls.py from myproject to myapp
+
+# add line at myapp urls - from . import views
+                           path('add\',views.index, name='add'),
+
+# add line at myproject urls - path('',include('myapp.urls')),
+
+# views.py - def index(request):
+             return render(request, 'add.html') 
+
+# index.html - {% load static %}
+
+# settings.py - STATICFILES_FINDERS = [
+    # searches in STATICFILES_DIRS
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    # searches in STATIC subfolder of each app
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+*********** Admin Page **************
+>> python manage.py makemigrations
+
+>> python manage.py migrate
+
+>> python manage.py createsuperuser
+
