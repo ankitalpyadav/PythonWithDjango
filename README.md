@@ -4,8 +4,8 @@ Login and Register with custom template in Django and SQLite DB
 
 Pre-Requsites
 
-Python 3.9
-VS Code
-DB Browser SQLite
+1) Python 3.9
+2) VS Code
+3) DB Browser SQLite
 
 Follow the Sequence given in sequence.txt to run project.
